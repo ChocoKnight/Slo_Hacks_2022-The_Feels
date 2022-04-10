@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slohacks2022">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SloHacks2022">
+        <activity
+            android:name=".ConfidentWatchPage"
+            android:exported="false" />
+        <activity
+            android:name=".ConfidentPosePage"
+            android:exported="false" />
+        <activity
+            android:name=".ConfidentPicturePage"
+            android:exported="false" />
+        <activity
+            android:name=".NervousWatchPage"
+            android:exported="false" />
+        <activity
+            android:name=".NervousListenPage"
+            android:exported="false" />
+        <activity
+            android:name=".NervousPaintPage"
+            android:exported="false" />
+        <activity
+            android:name=".ExcitedWatchPage"
+            android:exported="false" />
+        <activity
+            android:name=".ExcitedDancePage"
+            android:exported="false" />
+        <activity
+            android:name=".ExcitedPicturePage"
+            android:exported="false" />
+        <activity
+            android:name=".SadWatchPage"
+            android:exported="false" />
+        <activity
+            android:name=".SadListenPage"
+            android:exported="false" />
+        <activity
+            android:name=".SadPaintPage"
+            android:exported="false" />
+        <activity
+            android:name=".HappyWatchPage"
+            android:exported="false" />
+        <activity
+            android:name=".HappyPlayPage"
+            android:exported="false" />
+        <activity
+            android:name=".HappyPicturePage"
+            android:exported="false" />
+        <activity
+            android:name=".AngryWatchPage"
+            android:exported="false" />
+        <activity
+            android:name=".AngryPlayPage"
+            android:exported="false" />
+        <activity
+            android:name=".AngryPaintPage"
+            android:exported="false" />
+        <activity
+            android:name=".VideoPage"
+            android:exported="false" />
+        <activity
+            android:name=".ConfidentMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".ExcitedMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".NervousMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".SadMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".HappyMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".AngryMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".FeelingsPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

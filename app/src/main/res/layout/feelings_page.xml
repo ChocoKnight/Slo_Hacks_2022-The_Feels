@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feelingpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteX="-143dp"
+    tools:layout_editor_absoluteY="-37dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="#B9CDFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:color="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/circle" />
+
+    <Button
+        android:id="@+id/buttonEmotionDescription"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+
+        android:background="#000000"
+        android:fontFamily="@font/komu_a"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView_askingEmotion"
+        android:layout_width="344dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/komu_a"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="How are you currently feeling? "
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEmotionDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/textView_currentEmotion"
+        android:layout_width="344dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/komu_a"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEmotionDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <ImageButton
+        android:id="@+id/imageButton_happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_sad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle_blue"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_excited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_angry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_happy"
+        app:srcCompat="@drawable/circle_blue"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_nervous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle_blue"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_angry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_confident"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_sad"
+        app:srcCompat="@drawable/circle_blue"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_nervous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEmotionDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle_blue"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_confident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEmotionDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_nervous"
+        app:srcCompat="@drawable/circle_blue"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

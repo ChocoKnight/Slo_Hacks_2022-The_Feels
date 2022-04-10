@@ -1,0 +1,25 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="oval"
+    android:layout_width="218dp"
+    android:layout_height="218dp">
+
+    <solid
+        android:color="#E77D6E" />
+
+    <size
+        android:width="289dp"
+        android:height="325dp" />
+
+    <padding
+        android:left="10dp"
+        android:top="20dp"
+        android:right="40dp"
+        android:bottom="8dp" />
+
+    <rotate
+        android:fromDegrees="45"
+        android:toDegrees="70"
+        />
+
+</shape>
